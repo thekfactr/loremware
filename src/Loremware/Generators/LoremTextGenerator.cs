@@ -5,6 +5,7 @@ namespace Loremware.Generators
 {
     public static class LoremTextGenerator
     {
+        // credit(s): https://stackoverflow.com/a/4286571
         public static string GenerateLoremIpsumText(int minWords = 15, 
                                                     int maxWords = 30, 
                                                     int minSentences = 5, 
