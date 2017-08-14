@@ -17,7 +17,7 @@ namespace Loremware
         {
             if (!context.Response.HasStarted)
             {
-                if (context.Request.Path.ToString().Contains("tlw"))
+                if (context.Request.Path.ToString().Contains("tlw") || context.Request.QueryString.ToString().Contains("tlw"))
                 {
                     var page = new LoremPage();
                     await page.ExecuteAsync(context);
