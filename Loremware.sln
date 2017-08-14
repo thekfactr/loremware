@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D9146326-4FF5-4F83-8DA3-ACBCA4DAA1E5}"
 	ProjectSection(SolutionItems) = preProject
 		global.json = global.json
+		ReadMe.md = ReadMe.md
 	EndProjectSection
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Loremware", "src\Loremware\Loremware.xproj", "{B65A4758-CFC3-45C9-BC49-0062209F203F}"
