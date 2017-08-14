@@ -11,6 +11,8 @@ content for your pages!
 ```csharp
 if (env.IsDevelopment())
 {
-	app.UseLoremware();
+   app.UseLoremware();
 }
 ```
+
+In order to show the lorem ipsum page, just add `tlw` to the any part of the path or the query string
