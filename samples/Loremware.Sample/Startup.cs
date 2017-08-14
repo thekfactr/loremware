@@ -45,6 +45,11 @@ namespace Loremware.Sample
 
             app.UseStaticFiles();
 
+            if (env.IsDevelopment())
+            {
+                app.UseLoremware();
+            }
+
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
