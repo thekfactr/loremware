@@ -65,5 +65,8 @@
 --reference:C:\Users\karthik\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\karthik\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\karthik\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
+C:\Development\Github\Loremware\src\Loremware\LoremwareExtensions.cs
 C:\Development\Github\Loremware\src\Loremware\LoremwareMiddleware.cs
+C:\Development\Github\Loremware\src\Loremware\Generators\LoremImageGenerator.cs
+C:\Development\Github\Loremware\src\Loremware\Generators\LoremTextGenerator.cs
 C:\Development\Github\Loremware\src\Loremware\Properties\AssemblyInfo.cs
