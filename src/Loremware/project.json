@@ -3,6 +3,7 @@
 
   "dependencies": {
     "Microsoft.AspNetCore.Http.Abstractions": "1.0.0",
+    "Microsoft.Extensions.Options": "1.2.0-preview1-22736",
     "NETStandard.Library": "1.6.0"
   },
 

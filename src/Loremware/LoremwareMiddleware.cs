@@ -1,25 +1,29 @@
 ﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Loremware.Views;
+using Microsoft.Extensions.Options;
 
 namespace Loremware
 {
     public class LoremwareMiddleware
     {
         private readonly RequestDelegate _next;
+        private readonly LoremContentOptions _contentOptions;
 
-        public LoremwareMiddleware(RequestDelegate next)
+        public LoremwareMiddleware(RequestDelegate next, IOptions<LoremContentOptions> contentOptions)
         {
             _next = next;
+            _contentOptions = contentOptions.Value;
         }
 
         public async Task Invoke(HttpContext context)
         {
             if (!context.Response.HasStarted)
             {
-                if (context.Request.Path.ToString().Contains("tlw") || context.Request.QueryString.ToString().Contains("tlw"))
+                var requestObject = new LoremRequestObject(context.Request);
+                if (requestObject.ContentType != LoremContentType.None)
                 {
-                    var page = new LoremPage();
+                    var page = new LoremPage(requestObject);
                     await page.ExecuteAsync(context);
                     return;
                 }
